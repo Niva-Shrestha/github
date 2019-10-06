@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> HIRAJ'S WEBSITE </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<script type="text/javascript">
+		function validateForm() {
+		 var firstName=document.forms["signup"] ["firstName"].value;
+		 if(firstName==""){
+			alert("please type your first name"};
+			return false;
+		 }
+		 var lastName=document.forms["signup"] ["lastName"].value;
+		 if(lastName==""){
+			alert("please type your last name"};
+			return false;
+		 }
+		 }
+	</script>
+</head>
+<body onload="alert('welcome to the Kings Music Store-Newsletter Signup');">
+	
+	<form id="form" name="signup" action="http://infotech.scu.edu.au/cgi-bin/echo_form" onsubmit="return validation()" method="post">
+		<h1> Sign Up Form </h1>
+		<label> First name </label> <input type="text" class="text" name="firstName"> <br>
+		<label> Last name </label> <input type="text" class="text" name="lastName"> <br>
+		<label> Email:</label> <input type="email" class="text" name="email"> <br>
+		<label> Music Genres </label>  <br>
+			<input type="checkbox" name="favourateRock" value="red"> <label> Rock </label> <br>
+			<input type="checkbox" name="favourateBlues" value="blue"> <label> Blues </label> <br>
+			<input type="checkbox" name="favourateJazz" value="green"> <label> Jazz </label> <br>
+			<input type="checkbox" name="favourateCountry" value="green"> <label> Country And Western</label> <br>
+			<input type="checkbox" name="favourateFolk" value="green"> <label> Folk </label> <br>
+			<input type="checkbox" name="favouratePop" value="green"> <label> Pop </label> <br>
+			<input type="checkbox" name="favourateDisco" value="green"> <label> Disco</label> <br>
+			<input type="checkbox" name="favourateClassical" value="green"> <label> Classical </label> <br>
+			<input type="checkbox" name="favourateHeavymetal" value="green"> <label> Heavy Metral</label> <br>
+			<input type="checkbox" name="favourateOpera" value="green"> <label> Opera </label> <br>
+		<label> Gender </label> <br>
+			<input type="radio" name="GenderMale" value="red"> <label> Male  </label> <br>
+			<input type="radio" name="GenderFemale" value="red"> <label> Female  </label> <br>
+			<input type="radio" name="GenderOthers" value="red"> <label> Others	</label> <br>
+			
+		<label class="labels"> Age group  </label> <br>
+			<select name="ageGroup">
+				<option value="Please select"> Please select </option> 
+				<option value="teen"> 15 to 25 </option> 
+				<option value="adult"> 26 to 35  </option> 
+				<option value="average"> 36 to 45</option>
+				<option value="man"> 46 to 55 </option>
+				<option value="old"> 55+ </option>
+			</select> <br>
+			
+		<label>  Please type any suggestion to our website </label> <br>
+		<textarea name="comment" cols="70" rows="10"> </textarea> <br>
+		
+		<input type="submit" value="Submit" id="submit"> 
+		<input type="reset" value="clear" id="reset">
+
+
+
+	</form>
+</body>
+
+
+
+</html>
